@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #403f3f 16.62%, #0a0706 85.61%);
+}
+
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px;
+    border-bottom: 2px solid #FFF2E7; /* Adiciona a linha entre o cabeçalho e o conteúdo */
+}
+
+.imagem-cabeçalho {
+
+    width: 300px;
+    height: 130px;
+}
+
+
+.cabeçalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 700;  /* Tornar o texto mais forte */
+    font-size: 15px;   /* Aumentar o tamanho da fonte */
+    color: #fffffd;    /* Cor mais vibrante, dourado, por exemplo */
+    text-transform: uppercase; /* Tornar o texto em maiúsculas */
+    letter-spacing: 1px; /* Espaçamento entre as letras para mais destaque */
+    transition: all 0.3s ease-in-out; /* Transição suave ao passar o mouse */
+}
+
+/* Efeito de hover */
+.cabeçalho-menu-item:hover {
+    color: #FFF;  /* Cor branca ao passar o mouse */
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8); /* Sombra dourada no texto */
+    transform: scale(1.1);  /* Aumenta o tamanho do texto ao passar o mouse */
+}
+
+-- CENTRO --
+
+.conteudo {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    height: 100vh;           /* Garante que o conteúdo ocupe toda a altura da tela */
+    margin: 0;               /* Remove qualquer margem extra */
+    padding: 0;              /* Remove qualquer padding extra */
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row; /* Se ainda quiser manter os itens lado a lado */
+    justify-content: center; /* Para garantir que o conteúdo dentro dela esteja centrado */
+    align-items: center;     /* Alinha os itens no centro verticalmente */
+    text-align: center;      /* Garante que o texto dentro do container também fique centralizado */
+}
+
+
+.conteudo-principal-escrito {
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+
+    font-family: 'righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color:#fffefd;
+    margin-top: 40px;
+    margin-inline-start: 25px;
+    text-align: center;
+    
+ 
+}
+
+.logotipo {
+
+    width: 300px; /* Define a largura da imagem */
+    border: 5px solid #000; /* Adiciona uma borda preta de 5 pixels */
+    background-color: #2a2928;
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+    margin-bottom: 25px;
+    margin-top: 30px;
+   
+}
+.img {
+
+    display: flex;
+    justify-content: center; 
+}
+
+.conteudo-principal-escrito-subtitulo {
+
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ECD6C4;
+   
+}
+
+
+.rodape {
+    padding: 0px;
+    border-top: 0.4px solid #FFF2E7;
+    gap: 0px;
+}
+
+.rodape-imagem {
+    height: 150px;
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+    .conteudo-terceiro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 25px;
+    border-top: 0.8px solid #FFF2E7;
+    margin-bottom: 16px;
+    margin-top: 50px;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.container {
+
+    border-top: 0.8px solid #FFF2E7;
+    display: flex;
+    justify-content: space-around; /* Espaçamento igual entre os botões */
+    align-items: center;
+    width: 100%; /* Largura do contêiner */
+    gap: 0px;
+    margin-top: 30px;
+    margin-right: 100; 
+}
+
+
+.botao1 {
+    padding: 10px 20px;            /* Espaçamento interno */
+    font-size: 16px;               /* Tamanho da fonte */
+    color: rgb(10, 8, 8);                  /* Cor do texto */
+    background-color: white; /* Fundo transparente */
+    border: 2px solid white;       /* Borda branca */
+    border-radius: 15px;            /* Bordas arredondadas */
+    text-decoration: none;          /* Remove sublinhado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+    margin-top: 30px;
+    font-family: 'righteous', cursive;
+    font-weight: 40px;
+    font-size: 30px;
+}
+
+.botao1:hover {
+    background-color: rgb(22, 10, 10); /* Fundo branco ao passar o mouse */
+    color: rgb(230, 225, 225);            /* Texto preto ao passar o mouse */
+}
+        
+
+
+        
+.chat-container {
+    width: 1513px;                  /* Largura do chat */
+    background-color: rgba(29, 27, 26, 0.53);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    border-top: 0.8px solid #FFF2E7;
+}
+        
+        .chat-box {
+            flex: 1;
+            padding: 10px;
+            overflow-y: auto;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .input-container {
+            display: flex;
+            padding: 10px;
+        }
+        
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .botao {
+            padding: 10px;
+            background-color:white;
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        
+        
+.botao:hover {
+
+    background-color: rgba(36, 25, 16, 0.53);
+}
+
+        #load-more {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: rgba(36, 25, 16, 0.53);
+            color: white
+        }
+        
+        #load-more:hover {
+            background-color: #cdd2ce
+        }
+
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            gap: 20px;
+        }
+        
+        .custom-button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #e3a323;
+            color: rgb(30, 24, 24);
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .custom-button:hover {
+            background-color: #0056b3;
+        }
+
+        .sinopse {
+           
+            text-align: center; /* Centraliza o texto horizontalmente */
+            font-size: 17px; /* Tamanho da fonte */
+            margin: 0;
+            color: white;
+            margin-left: 100px;
+            margin-right: 100px;
+            font-family: 'Times New Roman', serif;
+            margin-bottom: 25px;
+           
+
+           
+        }
+
+         .poem {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px 40px;
+            align-self: flex-start 100px;
+            margin-left: 100px;
+            margin-right: 100px;
+            font-family: 'Playfair Display', serif;
+            margin-top: 100px;
+           
+        
+
+         }
+
+       
+                  .resumo {
+                    font-family: Arial, sans-serif;
+                    line-height: 1.6;
+                    margin-top: 15px;
+                    padding: 20px;
+                    background-color: #181717;
+                }
+                
+                .topo {
+                    background: #333;
+                    color: #faf6f6;
+                    padding: 10px 0;
+                    text-align: center;
+                }
+                
+                nav {
+                    margin: 20px 0;
+                    color: #ddd;
+                }
+                
+                nav ul {
+                    list-style: none;
+                    padding: 0;
+                    color: #ddd;
+                }
+                
+                nav ul li {
+                    display: inline;
+                    margin: 0 25px;
+                    color: #ddd;
+                }
+                
+                .discografia {
+                    margin-inline-start: 50px;  
+                    margin-left: 50px;            
+                    margin-left: 50px;                                                                                                                                      
+                }
+                
+                nav a {
+                    text-decoration: none;
+                    color: #eeebeb;
+                    margin-inline-start: 150px;
+                }
+                
+                nav a:hover {
+                    text-decoration: underline;
+                }
+                
+                .cor {
+                    background: linear-gradient(68.15deg, #fcf8f8 16.62%, #c0b5b5 85.61%);
+                    padding: 20px 50px; /* Aumentando o espaçamento das laterais */
+                    margin-bottom: 20px;
+                    border-radius: 5px;
+                    color: #0c0606;
+                }
+
+                #introducao, #biografia, #sobre {
+                    margin-left: 50px; /* Ajustando o posicionamento das seções à esquerda */
+                    margin-right: 50px; /* Ajustando o posicionamento das seções à direita */
+                }
+                
+                /* Títulos das seções */
+                #introducao h2, #biografia h2, #sobre h2 {
+                    font-size: 24px;
+                    color: #333;
+                    margin-bottom: 15px; /* Espaçamento entre o título e o conteúdo */
+                }
+                
+                /* Ajuste no texto da introdução, biografia e sobre */
+                #introducao p, #biografia p, #sobre p {
+                    font-size: 18px;
+                    line-height: 1.6;
+                    margin: 15px 0; /* Aumentando o espaçamento entre parágrafos */
+                    color: #2b2a2a; /* Cor de texto mais suave para melhor leitura */
+                }
+                
+                /* Adicionando um pouco de espaçamento à esquerda e direita nos parágrafos */
+                #introducao p, #biografia p, #sobre p {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                
+                /* Melhorando a legibilidade do texto */
+                #introducao p, #biografia p, #sobre p {
+                    font-family: 'Times New Roman', serif;
+                }
+                
+                /* Seções de introdução, biografia e sobre terão um espaçamento melhorado */
+                #introducao, #biografia, #sobre {
+                    margin-top: 20px;
+                }
+                
+                /* Se necessário, podemos aumentar o espaço entre as seções */
+                #introducao, #biografia, #sobre {
+                    margin-bottom: 20px;
+                }
+                
+                #livros ul, #quadros ul {
+                    padding-left: 20px; /* Adicionando um pouco de espaçamento na esquerda */
+                }
+                
+                #livros li, #quadros li {
+                    margin: 10px 0; /* Aumentando o espaçamento entre os itens da lista */
+                    font-size: 18px;
+                    color: #2b2a2a;
+                    list-style-type: none; /* Removendo os pontos da lista */
+                }
+                
+                #livros, #quadros {
+                    margin-left: 50px; /* Ajustando o posicionamento das seções à esquerda */
+                    margin-right: 50px; /* Ajustando o posicionamento das seções à direita */
+                }
+                
+                #livros h2, #quadros h2 {
+                    margin-bottom: 15px; /* Adicionando um pequeno espaço abaixo dos títulos */
+                    font-size: 24px;
+                    color: #333; /* Melhor contraste para o título */
+                }
+                
+                
